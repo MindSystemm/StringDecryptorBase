@@ -95,7 +95,7 @@ namespace StringDecryptorBase
                                 //Here you can use resolve or resolved2, they should be the same 
                                 method.Body.Instructions[i].Operand = resolved;
                                 //Nop the call !! not deleting it ! 
-                                method.Body.Instructions[i + 1].OpCode = OpCodes.Call;
+                                method.Body.Instructions[i + 1].OpCode = OpCodes.Nop;
                                 //Printing the decrypted strings
                                 amount++;
                                 Console.ForegroundColor = ConsoleColor.Green;
